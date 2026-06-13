@@ -41,3 +41,10 @@ test: folder
 clean:
 	@rm -rf $(OUT_DIR)
 	@echo "Cleaned."
+
+VERSION := 0.0.1
+ZIP_NAME = momo-assignment-$(VERSION).zip
+
+zip:
+	git archive --format=zip --output=$(CURDIR)/$(ZIP_NAME) HEAD
+	@echo "Created: $(ZIP_NAME)"
