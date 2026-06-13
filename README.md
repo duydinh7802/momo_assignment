@@ -17,6 +17,9 @@ make test
 
 # Xóa file build
 make clean
+
+# Zip source
+make zip
 ```
 
 ---
